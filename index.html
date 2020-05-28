@@ -6,7 +6,7 @@
 	<style>
 @font-face {
     font-family: 'PressStart2P';
-    src: url('https://avcpu.github.io/PressStart2P-Regular.ttf')  format('truetype');
+    src: url('PressStart2P-Regular.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -26,6 +26,7 @@
 .result{
 	display: none; font-size: 25px;
 	color: #05fffe;
+	line-height: 32pt;
 }
 </style>
 </head>
@@ -34,18 +35,18 @@
 
 <div class="parent">
 	<div class="vertical-center">
-		<img id="btn" src="https://avcpu.github.io/img.jpg" style="width: 600px; height: 450px;" onclick="showName();">
-		<img id="loader" src="https://avcpu.github.io/loader.gif" style="display: none;">
-		<div id="d1"  class="result">С возвращением, мистер Билл Гейтс</div>
-		<div id="d2" class="result">С возвращением, мистер Билл Мюррей</div>
-		<div id="d3" class="result">С возвращением, мистер Пол Ален</div>
-		<div id="d4" class="result">С возвращением, мисс Риз Уизерспун</div>
-		<div id="d5" class="result">С возвращением, мистер Джон Смит</div>
-		<div id="d6" class="result">С возвращением, мисс Натали Паради</div>
-		<div id="d7" class="result">С возвращением, мистер Джон Уейн</div>
-		<div id="d8" class="result">С возвращением, мистер Ингви Аддамс</div>
-		<div id="d9" class="result">С возвращением, миссис Джейн Доу</div>
-		<div id="d10" class="result">С возвращением, мистер Васисуалий Пупкин</div>
+		<img id="btn" src="img.jpg" style="width: 600px; height: 450px;" onclick="showName();">
+		<img id="loader" src="loader.gif" style="display: none;">
+		<div id="d1"  class="result">С возвращением, <br />мистер Билл Гейтс</div>
+		<div id="d2" class="result">С возвращением, <br />мистер Билл Мюррей</div>
+		<div id="d3" class="result">С возвращением, <br />мистер Пол Ален</div>
+		<div id="d4" class="result">С возвращением, <br />мисс Риз Уизерспун</div>
+		<div id="d5" class="result">С возвращением, <br />мистер Джон Смит</div>
+		<div id="d6" class="result">С возвращением, <br />мисс Натали Паради</div>
+		<div id="d7" class="result">С возвращением, <br />мистер Джон Уейн</div>
+		<div id="d8" class="result">С возвращением, <br />мистер Ингви Аддамс</div>
+		<div id="d9" class="result">С возвращением, <br />миссис Джейн Доу</div>
+		<div id="d10" class="result">С возвращением, <br />мистер Васисуалий Пупкин</div>
 	</div>
 </div>
 
@@ -59,7 +60,7 @@
 
             $("#loader").show();
 
-            setTimeout(function(){ hideLoader(); }, 3000);
+            setTimeout(function(){ hideLoader(); },3000);
             
 		}
 
