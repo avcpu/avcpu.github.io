@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Button of eternity</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<style>
+
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+	
+
+<div class="parent">
+	<div class="vertical-center">
+		<img id="btn" src="https://netbu.ru/wp-content/uploads/2012/03/To-establish-beautiful-button-Twitter-on-a-site.jpg" onclick="showName();">
+		<div id="d1"  style="display: none; font-size: 35px;">С возвращением, мистер Билл Гейтс</div>
+		<div id="d2" style="display: none; font-size: 35px;">С возвращением, мистер Билл Мюррей</div>
+		<div id="d3" style="display: none; font-size: 35px;">С возвращением, мистер Пол Ален</div>
+		<div id="d4" style="display: none; font-size: 35px;">С возвращением, мисс Риз Уизерспун</div>
+		<div id="d5" style="display: none; font-size: 35px;">С возвращением, мистер Джон Смит</div>
+		<div id="d6" style="display: none; font-size: 35px;">С возвращением, мисс Натали Паради</div>
+		<div id="d7" style="display: none; font-size: 35px;">С возвращением, мистер Джон Уейн</div>
+		<div id="d8" style="display: none; font-size: 35px;">С возвращением, мистер Ингви Аддамс</div>
+		<div id="d9" style="display: none; font-size: 35px;">С возвращением, миссис Джейн Доу</div>
+		<div id="d10" style="display: none; font-size: 35px;">С возвращением, мистер Васисуалий Пупкин</div>
+	</div>
+</div>
+
+
+	<script type="text/javascript">
+		function showName() {
+            $("#btn").hide();
+            for(var i = 1; i < 11; i++){
+            	$("#d" + i).hide();
+            }
+            var n = Math.floor(Math.random() * 10) + 1;
+			$("#d" + n).show();
+		}
+	</script>
+</body>
+</html>
