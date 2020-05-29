@@ -66,6 +66,7 @@
 	<script type="text/javascript">
 		function showName() {
             $("#btn").hide();
+			$("#cover").hide();
             //for(var i = 1; i < 11; i++){
             //	$("#d" + i).hide();
             //}
@@ -90,6 +91,7 @@
 			$("#d1").html(name);
 			$("#d1").show();
 		}
+		window.addEventListener('touchend', showName, false);
 	</script>
 </body>
 </html>
